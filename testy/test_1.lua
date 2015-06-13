@@ -1,5 +1,7 @@
 #!/usr/local/bin/luajit
 
+package.path = package.path..";../?.lua"
+
 local ffi = require("ffi")
 local lxc = require("lxc_ffi")
 

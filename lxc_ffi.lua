@@ -243,30 +243,14 @@ struct bdev_specs {
 
 ffi.cdef[[
 struct lxc_container *lxc_container_new(const char *name, const char *configpath);
-
-
 int lxc_container_get(struct lxc_container *c);
-
-
 int lxc_container_put(struct lxc_container *c);
-
-
 int lxc_get_wait_states(const char **states);
-
-
 const char *lxc_get_global_config_item(const char *key);
-
-
 const char *lxc_get_version(void);
-
-
 int list_defined_containers(const char *lxcpath, char ***names, struct lxc_container ***cret);
-
 int list_active_containers(const char *lxcpath, char ***names, struct lxc_container ***cret);
-
 int list_all_containers(const char *lxcpath, char ***names, struct lxc_container ***cret);
-
-
 void lxc_log_close(void);
 ]]
 
